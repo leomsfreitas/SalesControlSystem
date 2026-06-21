@@ -1,60 +1,58 @@
-# Projeto Final - Controle de Vendas
+# Final Project — Sales Control System
 
-Este é o projeto final desenvolvido para a disciplina de **Algoritmos e Programação 2**, ministrada pela **Professora Eloize Seno**. O objetivo do projeto é desenvolver uma aplicação para o controle de vendas de produtos em um supermercado, utilizando conceitos de vetores, strings, registros e funções em linguagem C.
+Final project developed for the **Algorithms and Programming 2** course, taught by **Professor Eloize Seno**. The goal is to build an application for controlling product sales in a supermarket, using arrays, strings, records, and functions in C.
 
-## Objetivo do Projeto
+## Project Objective
 
-A aplicação permite:
+The application allows users to:
 
-- Armazenar e gerenciar informações de clientes, produtos e vendas realizadas.
-- Realizar operações de listagem, inclusão, alteração e exclusão para cada entidade (clientes, produtos, vendas).
-- Gerar relatórios específicos sobre clientes, produtos e vendas, de acordo com critérios determinados pelo usuário.
+- Store and manage information about customers, products, and completed sales.
+- Perform listing, insertion, update, and deletion operations for each entity (customers, products, sales).
+- Generate specific reports about customers, products, and sales based on user-defined criteria.
 
-## Funcionalidades Principais
+## Main Features
 
-### Entidades e Atributos
+### Entities and Attributes
 
-1. **Cliente**
-   - CPF (Chave)
-   - Nome
-   - Data de Nascimento
-   - Sexo
-   - Salário
-   - E-mails
-   - Telefones
+1. **Customer**
+   - CPF (Primary Key)
+   - Name
+   - Date of Birth
+   - Gender
+   - Salary
+   - Emails
+   - Phone Numbers
 
-2. **Produto**
-   - Código (Chave)
-   - Descrição
-   - Tamanho
-   - Peso
-   - Altura
-   - Largura
-   - Preço
-   - Desconto
-   - Data de Validade
+2. **Product**
+   - Code (Primary Key)
+   - Description
+   - Size
+   - Weight
+   - Height
+   - Width
+   - Price
+   - Discount
+   - Expiration Date
 
-3. **Venda**
-   - CPF do Cliente (Chave)
-   - Código do Produto (Chave)
-   - Data (Chave)
-   - Hora (Chave)
-   - Valor
+3. **Sale**
+   - Customer CPF (Key)
+   - Product Code (Key)
+   - Date (Key)
+   - Time (Key)
+   - Amount
 
-### Menu de Opções
+### Menu Options
 
-1. **Submenu de Clientes**: Listar, incluir, alterar e excluir clientes.
-2. **Submenu de Produtos**: Listar, incluir, alterar e excluir produtos.
-3. **Submenu de Vendas**: Listar, incluir, alterar e excluir vendas.
-4. **Submenu de Relatórios**:
-   - Clientes com mais de X telefones.
-   - Produtos com data de validade expirada.
-   - Vendas realizadas entre datas específicas fornecidas pelo usuário.
-5. **Sair**
+1. **Customer Submenu**: List, add, update, and delete customers.
+2. **Product Submenu**: List, add, update, and delete products.
+3. **Sales Submenu**: List, add, update, and delete sales.
+4. **Reports Submenu**:
+   - Customers with more than X phone numbers.
+   - Products with an expired expiration date.
+   - Sales between two user-specified dates.
+5. **Exit**
 
-### Regras e Restrições
+### Business Rules
 
-- **Chaves únicas**: Não é permitido cadastrar mais de um registro com valores repetidos nos atributos-chave.
-- **Persistência de Dados**: O sistema deve utilizar arquivos para armazenamento permanente dos dados.
-
----
+- **Unique keys**: Duplicate values for key attributes are not allowed.
+- **Data Persistence**: The system uses files for permanent data storage.
